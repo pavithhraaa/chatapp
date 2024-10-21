@@ -3,19 +3,25 @@ import { useNavigate } from 'react-router-dom';
 import './Login.css';
 
 const LoginPage = ({ setIsLoggedIn }) => {
-  const [email, setEmail] = useState(''); 
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
   const navigate = useNavigate();
   const validEmail = 'jyosthna.ghanta@gmail.com';
   const validPassword = '1234';
 
   const handleLogin = (e) => {
     e.preventDefault();
+    setErrorMessage(''); // Clear previous error message
     if (email === validEmail && password === validPassword) {
       setIsLoggedIn(true);
-      navigate("/chat");
+      setSuccessMessage('Login successful! Redirecting to chat...');
+      setTimeout(() => {
+        navigate("/chat");
+      }, 2000);
     } else {
-      alert('Invalid credentials');
+      setErrorMessage('Invalid email or password. Please try again.');
     }
   };
 
@@ -23,6 +29,8 @@ const LoginPage = ({ setIsLoggedIn }) => {
     <div className="login-signup-page">
       <div className="form-container">
         <h1>Login</h1>
+        {successMessage && <div className="success-message">{successMessage}</div>}
+        {errorMessage && <div className="error-message">{errorMessage}</div>}
         <form onSubmit={handleLogin}>
           <div className="input-group">
             <label>Email</label>
