@@ -26,6 +26,11 @@
 .read-the-docs {
   color: #888;
 }
+
+.download-buttons {
+  display: flex; 
+}
+
 @media screen and (max-width: 768px) {
   .download-buttons {
     flex-direction: column;

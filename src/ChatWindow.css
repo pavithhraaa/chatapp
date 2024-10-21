@@ -19,17 +19,14 @@
 
 .message {
   padding: 10px;
-  background-color: #f1f1f1;
   margin-bottom: 10px;
   border-radius: 4px;
-  background-color: #5bb1cd;
-  color:black;
+  background-color: #5bb1cd; /* Maintain consistent background color */
+  color: black;
 }
 
 .message-input {
   display: flex;
-  background-color: #5bb1cd;
-  color:black;
 }
 
 .message-input input {
@@ -37,7 +34,6 @@
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  
 }
 
 .message-input button {

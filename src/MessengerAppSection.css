@@ -4,7 +4,8 @@
     background-color: #f8f8f8;
 }
 
-.messenger-app-section h2, h3 {
+.messenger-app-section h2,
+.messenger-app-section h3 {
     font-size: 48px;
     margin-bottom: 10px;
     color: black;

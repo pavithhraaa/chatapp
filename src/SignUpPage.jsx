@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './SignUpPage.css'; // Common CSS for login/signup forms
+import './SignUpPage.css';
 
 const SignUpPage = () => {
   const [formData, setFormData] = useState({ name: '', email: '', password: '' });
@@ -22,7 +22,6 @@ const SignUpPage = () => {
     });
 
     if (newErrors.length === 0) {
-      // On successful signup
       console.log('Form submitted:', formData);
       navigate("/login");
     } else {
