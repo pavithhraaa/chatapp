@@ -1,5 +1,6 @@
 import React from 'react';
 import './MessengerAppSection.css';
+
 const MessengerAppSection = () => {
   const features = [
     {
@@ -18,6 +19,7 @@ const MessengerAppSection = () => {
       description: "You can access various information and services."
     }
   ];
+
   return (
     <section className="messenger-app-section" id="messenger-app">
       <h2>Messenger APP</h2>
@@ -34,4 +36,5 @@ const MessengerAppSection = () => {
     </section>
   );
 };
+
 export default MessengerAppSection;

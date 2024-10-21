@@ -1,4 +1,5 @@
 import React from "react";
+import './Sidebar.css';
 
 function Sidebar({ friends, setSelectedChat }) {
   return (
@@ -11,7 +12,7 @@ function Sidebar({ friends, setSelectedChat }) {
             className="chat-item"
             onClick={() => setSelectedChat(friend)}
           >
-            <div className={`status ${friend.status}`}></div> {}
+            <div className={`status ${friend.status}`}></div>
             <div className="chat-info">
               <h4>{friend.name}</h4>
               <p>{friend.lastMessage || "No messages yet"}</p>

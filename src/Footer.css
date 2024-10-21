@@ -4,13 +4,13 @@
     text-align: center;
 }
 
-.footer h2 {
-    color: black;
-}
-
 .app-links,
 .footer-links {
     margin: 10px 0;
+}
+
+h2 {
+    color: black;
 }
 
 .app-links a,

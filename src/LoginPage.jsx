@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
+
 const LoginPage = ({ setIsLoggedIn }) => {
   const [email, setEmail] = useState(''); 
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
   const validEmail = 'jyosthna.ghanta@gmail.com';
   const validPassword = '1234';
+
   const handleLogin = (e) => {
     e.preventDefault();
     if (email === validEmail && password === validPassword) {
@@ -16,6 +18,7 @@ const LoginPage = ({ setIsLoggedIn }) => {
       alert('Invalid credentials');
     }
   };
+
   return (
     <div className="login-signup-page">
       <div className="form-container">
@@ -48,4 +51,5 @@ const LoginPage = ({ setIsLoggedIn }) => {
     </div>
   );
 };
+
 export default LoginPage;

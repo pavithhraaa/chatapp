@@ -9,14 +9,14 @@ import ChatWindow from './ChatWindow';
 const App = () => {
   return (
     <Router>
-      <React.Fragment>
+      <div className="app-container">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignUpPage />} />
           <Route path="/chat" element={<ChatWindow />} />
         </Routes>
-      </React.Fragment>
+      </div>
     </Router>
   );
 };

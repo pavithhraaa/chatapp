@@ -6,7 +6,7 @@ import Footer from './Footer';
 
 const HomePage = () => {
   return (
-    <React.Fragment>
+    <div className="home-page">
       <nav className="navbar">
         <div className="logo">Link Up</div>
         <ul className="nav-links">
@@ -37,9 +37,8 @@ const HomePage = () => {
         <MessengerAppSection />
       </section>
 
-      {}
       <Footer />
-    </React.Fragment>
+    </div>
   );
 }
 

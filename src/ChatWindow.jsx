@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ChatWindow.css';
+
 const ChatWindow = () => {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
@@ -10,6 +11,7 @@ const ChatWindow = () => {
       setInput('');
     }
   };
+
   return (
     <div className="chat-window">
       <div className="messages">
@@ -31,4 +33,5 @@ const ChatWindow = () => {
     </div>
   );
 };
+
 export default ChatWindow;
